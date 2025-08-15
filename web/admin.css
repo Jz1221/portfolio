@@ -1,0 +1,150 @@
+body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f5f7fa; /* Lighter background */
+        color: #334155; /* Darker text for better contrast */
+    }
+
+    /* General Animations */
+    @keyframes fadeInDown {
+        from { opacity: 0; transform: translateY(-20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+    .animate-fade-in-down { animation: fadeInDown 0.8s ease-out forwards; }
+    .animate-fade-in-up { animation: fadeInUp 0.8s ease-out forwards; }
+
+    /* Custom styles for toggling visibility with animation */
+    .hidden-content {
+      display: none;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+    }
+    .visible-content {
+      display: block;
+      opacity: 1;
+      transform: translateY(0);
+      transition: opacity 0.3s ease-in, transform 0.3s ease-in;
+    }
+
+    /* Button hover effects */
+    .btn-primary, .btn-secondary, .btn-danger {
+        transition: all 0.2s ease-in-out;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    .btn-primary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .btn-secondary:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+    .btn-danger:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    }
+
+    /* Input focus effects */
+    input:focus, textarea:focus {
+        outline: none;
+        border-color: #6366f1; 
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.2); 
+    }
+
+    /* Specific colors for sections */
+    .section-projects .form-bg { background-color: #ecfdf5; border-color: #a7f3d0; } 
+    .section-projects .text-color { color: black; } 
+    .section-projects .btn-add { background-color: #d77818ff; } 
+    .section-projects .btn-add:hover { background-color: #d77818ff; }
+
+    /*Skills*/
+    .section-skills .form-bg { background-color: #eef2ff; border-color: #c7d2fe; } 
+    .section-skills .text-color { color: black; } 
+    .section-skills .btn-add { background-color: #d77818ff; } 
+    .section-skills .btn-add:hover { background-color: #d77818ff; } 
+
+    /*Experience*/
+    .section-experience .form-bg { background-color: #fdf2f8; border-color: #fbcfe8; } 
+    .section-experience .text-color { color: black; } 
+    .section-experience .btn-add { background-color: #d77818ff; } 
+    .section-experience .btn-add:hover { background-color: #d77818ff; } 
+
+    /*Education*/
+    .section-education .form-bg { background-color: #fdf2f8; border-color: #fde68a; } 
+    .section-education .text-color { color: black; } 
+    .section-education .btn-add { background-color: #f59e0b; } 
+    .section-education .btn-add:hover { background-color: #d97706; } 
+
+    /*Certifications*/
+    .section-certifications .form-bg { background-color: #f0fdfa; border-color: #99f6e4; } 
+    .section-certifications .text-color { color: black; } 
+    .section-certifications .btn-add { background-color: #d77818ff; } 
+    .section-certifications .btn-add:hover { background-color: #d77818ff; } 
+
+    /* General card styling */
+    .data-card {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        margin-bottom: 1rem;
+        border-radius: 0.75rem;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e2e8f0; /* Slate-200 */
+        transition: all 0.3s ease;
+    }
+    .data-card:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Tab styles */
+    .tab-buttons {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
+        flex-wrap: wrap; /* Allow tabs to wrap on smaller screens */
+        gap: 0.5rem; /* Space between tabs */
+    }
+    .tab-button {
+        padding: 0.75rem 1.5rem;
+        font-weight: 600;
+        color: #64748b; /* Slate-500 */
+        background-color: #e2e8f0; /* Slate-200 */
+        border-radius: 0.5rem;
+        cursor: pointer;
+        transition: all 0.2s ease-in-out;
+        border: none; /* Remove default button border */
+        outline: none; /* Remove outline on focus */
+    }
+    .tab-button:hover {
+        background-color: #cbd5e1; /* Slate-300 */
+        color: #334155; /* Slate-700 */
+        transform: translateY(-2px);
+    }
+    .tab-button.active {
+        background-color: #6366f1; /* Indigo-500 */
+        color: white;
+        box-shadow: 0 4px 10px rgba(99, 102, 241, 0.3);
+        transform: translateY(-2px); /* Lift active tab slightly */
+    }
+    .tab-content {
+        padding: 1rem;
+        border-radius: 0.75rem;
+        background-color: #ffffff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+        border: 1px solid #e2e8f0;
+    }
+
+    /* Responsive adjustments for tab buttons */
+    @media (max-width: 768px) {
+        .tab-buttons {
+            flex-direction: column;
+            align-items: stretch;
+        }
+        .tab-button {
+            text-align: center;
+        }
+    }
