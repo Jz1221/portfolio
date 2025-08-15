@@ -6,6 +6,7 @@ project work. This site including a contact form that can send messages via emai
 ## Table of Contents
 - [Features](#features)
 - [Requirements](#requirements)
+- [Technologies](#Technologies)
 
 ## Features:
 - My profile photo and a short personal introduction
@@ -13,5 +14,14 @@ project work. This site including a contact form that can send messages via emai
 - List of skills and projects.
 - List of certifications.
 - Contact form that using PHPMailer
+- Admin Dashboard that CRUD
 
 ## Requirements:
+
+## Technologies
+- HTML
+- CSS
+- JavaScript
+- PHP
+- MYSQL
+
