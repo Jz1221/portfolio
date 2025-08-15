@@ -29,7 +29,7 @@ project work. This site including a contact form that can send messages via emai
 - PHP
 - MYSQL
 
-## Step to instalation
+## Step to installation
 1. Install XAMPP & Visual Studio Code
 2. Download the code as zip file and extract it
 3. Place the file in this file path C\:xampp\htdocs
